@@ -1,0 +1,40 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+{% include 'inc/head.html' %}
+
+<body style="background-image:linear-gradient(rgba(47, 23, 15, 0.65), rgba(47, 23, 15, 0.65)), url({% static 'img/bg.jpg' %})">
+
+    {% include 'inc/_nav.html' %}
+
+    <section class="page-section clearfix">
+        <div class="container">
+            <div class="intro"><img class="img-fluid intro-img mb-3 mb-lg-0 rounded" src="{% static 'img/clipboard-image-1.png' %}" style="background: rgb(255,255,255);opacity: 1;filter: brightness(104%) contrast(104%) saturate(102%) sepia(0%);">
+                <div class="fw-bold text-center d-inline-block intro-text p-5 rounded bg-faded" data-bss-hover-animate="bounce" style="margin-left: -21px;margin-top: -41px;width: 433.594px;margin-bottom: 0px;height: 526.969px;background: linear-gradient(var(--bs-primary) 26%, white 93%), #ffffff;border-radius: 3px;border-width: 3px;border-style: solid;transform: translate(0px) rotate(0deg);opacity: 0.86;">
+                    <h2 class="section-heading mb-4"><span class="section-heading-upper" style="height: 13.1875px;min-width: 19px;width: 340.594px;">ПОДАРИ СЕБЕ САМОЕ ВКУСНОЕ</span><span class="section-heading-lower" style="width: 339.594px;"><strong>СЕМЕЙНАЯ ШОКОЛАТЕРИЯ "MARIE"</strong><br></span></h2>
+                    <p class="text-start text-sm-start text-lg-start text-xl-start text-xxl-start border-1 d-inline-block">▶ Конфеты и десерты Шоколатерии Marie - это эксклюзивно, красиво и конечно очень вкусно!<br>▶ Качество и только натуральные ингредиенты!<br>▶ Сортовой шоколад!<br>▶ Яркая и красивая упаковка!<br>▶ Отличный подарок себе и близким!</p>
+                    <div class="mx-auto intro-button"><a class="btn btn-primary d-inline-block mx-auto btn-xl" role="button" href="{% url 'view_product' %}">Приходи к нам сегодня!</a></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="page-section cta">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-9 mx-auto">
+                    <div class="text-center cta-inner rounded">
+                        <h2 class="section-heading mb-4"><span class="section-heading-upper">Наши рецепты</span><span class="section-heading-lower">только для вас</span></h2>
+                        <p class="mb-0">Приглашаем Вас посетить нашу уникальную Шоколатерию Marie! Где Вы сразу окажетесь в удивительном мире шоколадных кондитерских изделий. Так что не тяните переходите во вкладку "МЕНЮ" и заказывайте самые красивые и вкусные сладости для себя, Ваших родных и друзей!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    {% include 'inc/footer.html' %}
+
+</body>
+
+</html>

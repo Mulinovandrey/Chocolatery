@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+
+<h1 class="text-center text-white d-none d-lg-block site-heading"><span class="text-primary site-heading-upper mb-3">НАЙДИ СВОЙ ВКУС И СВОЕ НАСТРОЕНИЕ ВМЕСТЕ С</span><span class="site-heading-lower"><strong>ШОКОЛАТЕРИЯ "МАРИЯ"</strong></span></h1>
+<nav class="navbar navbar-dark navbar-expand-lg bg-dark py-lg-3" id="mainNav">
+    <div class="container"><a class="navbar-brand text-uppercase d-lg-none text-expanded" href="{% url 'home' %}">MARIE</a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navbarResponsive"><span class="visually-hidden">Панель навигации</span><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item"><a class="nav-link" data-aos="zoom-out" data-aos-once="true" href="{% url 'home' %}"><h3>ГЛАВНАЯ</h3></a></li>
+              <li class="nav-item"><a class="nav-link" data-aos="zoom-out" data-aos-once="true" href="{% url 'view_product' %}"><h3>МЕНЮ</h3></a></li>
+              <li class="nav-item"><a class="nav-link" data-aos="zoom-out" data-aos-once="true" href="{% url 'view_store' %}"><h3>О МАГАЗИНЕ</h3></a></li>
+              <li class="nav-item"><a class="nav-link" data-aos="zoom-out" data-aos-once="true" href="{% url 'view_about' %}"><h3>О НАС</h3></a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
